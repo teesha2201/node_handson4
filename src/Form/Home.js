@@ -17,9 +17,9 @@ function Home()
         }
     },[token,navigate]);
 
-    const handleClick= ()=>{
+    const handleClick = ()=>{
         localStorage.removeItem("token");
-        navigate('/login')
+        navigate('/login');
     }
     return(
         <>
