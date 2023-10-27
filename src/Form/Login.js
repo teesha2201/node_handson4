@@ -18,7 +18,7 @@ function Login()
         e.preventDefault();
         axios.post("http://localhost:5001/api/login",data)
         .then(res=>{alert(`${res.data.msg}`)
-        localStorage.getItem("token",res,data.token) ,navigate('/')})
+        localStorage.getItem("token",res.data.token) ,navigate('/')})
         .catch(err=>console.log(err));
         navigate('/');
     }
