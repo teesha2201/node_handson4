@@ -25,6 +25,7 @@ function Register()
             console.log(res.data);
             alert(`${res.data.msg}`);
             setStore(res.data.msg)
+            console.log(store);
             localStorage.setItem("token",res.data.token);
             navigate('/')
         })
