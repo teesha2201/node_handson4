@@ -10,7 +10,7 @@ function Home()
     console.log(token);
     useEffect(()=>{
         if(token){
-        axios.get("http://localhost:5001/api/",{headers:{"authorization":`Bearer ${token}`}})
+        axios.get("http://localhost:5001/api",{headers:{"authorization":`Bearer ${token}`}})
         .then(res=>console.log(res.data))
         }
         else{
