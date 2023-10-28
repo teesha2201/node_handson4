@@ -3,14 +3,49 @@
     padding: "0";
     box-sizing: border-box;
 }
-body{
-    width:100vw;
-    height: 100vh;
-    border:3px solid black;
-}
+
 .loginForm{
+    width:100vw;
+    height: 80vh;
+    position: relative;
+    top:20vh;
+    background-color: antiquewhite;
+}
+.child{
     display:flex;
-    width:20vw;
-    height: auto;
-    border: 3px solid black;
+    flex-direction: column;
+    row-gap: 3vh;
+    width:30%;
+    height: 80%;
+    border: 8px groove rgb(232, 177, 177);
+    background-color: azure;
+    position:relative;
+    top:0%;
+    left:36%;
+}
+.child h2{
+    color:lightpink;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.child label {
+    line-height: 5vh;
+    text-transform: capitalize;
+    font-size: 100%;
+}
+.child input
+{
+    line-height: 3vh; 
+    background-color: rgb(235, 244, 244);
+    border-radius: 3%;
+    border:2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+}
+.child button
+{
+    width:20%;
+    height: 15%;
+    border:5px solid lightgrey;
+    border-radius: 6%;
+    font-size: 100%;
 }

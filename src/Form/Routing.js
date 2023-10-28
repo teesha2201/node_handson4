@@ -16,9 +16,9 @@ function Routing()
                 </Routes>
                 <div className="parent">
                     <header className="Navbar">
-                    <NavLink to="/" className={"link"} style={({isActive})=>({color: isActive ? "white":"gray"})}>Home</NavLink>
-                    <NavLink to="/login" className={"link"} style={({isActive})=>({color: isActive ? "white":"gray"})}>Login</NavLink>
-                    <NavLink to="/register" className={"link"} style={({isActive})=>({color: isActive ? "white":"gray"})}>Register</NavLink>
+                    <NavLink to="/" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Home</NavLink>
+                    <NavLink to="/login" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Login</NavLink>
+                    <NavLink to="/register" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Register</NavLink>
                     </header>
                 </div>
             </BrowserRouter>

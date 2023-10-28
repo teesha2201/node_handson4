@@ -1,0 +1,27 @@
+.homechild{
+    /* background-image: url('https://i.pinimg.com/736x/80/d5/5c/80d55c64fbf19af55944ba40392e650c.jpg'); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+    border:2px solid black;
+    gap: 20px;
+
+}
+.homechild h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:lightpink;
+}
+.homechild h1 button{
+    width:10vw;
+    height: 10vh;
+    border:5px solid rgb(230, 196, 196);
+    box-shadow: 8px 4px 5px gray;
+    font-size: 80%;
+    border-radius: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:lightpink;
+
+}

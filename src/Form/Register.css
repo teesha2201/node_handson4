@@ -1,0 +1,45 @@
+
+.registerparent{
+    width:100vw;
+    height: 80vh;
+    position: relative;
+    top:20vh;
+    /* border: 2px solid black; */
+    
+}
+.registerchild{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    width:30%;
+    height: 100%;
+    border: 8px groove rgb(232, 177, 177);
+    background-color: azure;
+    position:relative;
+    top:0%;
+    left:36%;
+}
+.registerchild h2{
+    color:lightpink;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.registerchild input{
+    line-height: 3vh; 
+    background-color: rgb(235, 244, 244);
+    border-radius: 3%;
+    border:2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+}
+.registerchild label {
+    line-height: 8vh;
+    text-transform: capitalize;
+    font-size: 100%;
+}
+.registerchild button{
+    width:20%;
+    height: 10%;
+    border:6px solid lightgrey;
+    border-radius: 5%;
+    font-size: 100%;
+}

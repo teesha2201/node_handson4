@@ -21,27 +21,40 @@ function Login()
         localStorage.getItem("token",res.data.token) 
         navigate('/')})
         .catch(err=>console.log(err));
-        navigate('/');
+        // navigate('/');
     }
     const handleSignUp =()=>{
         navigate('/register')
     }
     return(
         <>
-            <h1 >Login page</h1>
+            
+       
             <div className='loginForm'>
-            <form>
-                <label htmlFor="useremail">Enter your Email:</label>
-                <input type="email" id="useremail" name="email" value={data.email} onChange={handleUpdate} required/>
-                <br/>
-                <label htmlFor="password">Create your password:</label>
-                <input type="text" id="password" name="password"  value={data.password}  onChange={handleUpdate} required />
-                <br/>
-                <button onClick={handleSubmit}>Sign In</button>
-                <br/>
-                <button onClick={handleSignUp}>SignUp</button>
-            </form >
+            <div className='child'>
+                <h2 > Welcome to Login page</h2>
+                <form>
+            
+                    <label htmlFor="useremail"> Email: </label>
+                    <input type="email" id="useremail" name="email" value={data.email} onChange={handleUpdate} placeholder='enter your name' required/>
+                    <br/>
+                    <br/>
+                    <label htmlFor="password">Password:  </label>
+                    <input type="text" id="password" name="password"  value={data.password}  onChange={handleUpdate} placeholder='create your password' required />
+                    <br/>
+                    <br/>
+                    <button onClick={handleSubmit}>Sign In</button>
+                    <br/>
+                    <h4 style={{color:"blue"}}>OR</h4>
+                    <h4 style={{color:"blue"}}>If not Register then signUp First then Login to page 
+                    </h4>
+                    <div>
+                        <button onClick={handleSignUp}>SignUp</button>
+                    </div>
+                </form >
             </div>
+        </div>
+            
         </>
     )
 }
