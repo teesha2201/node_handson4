@@ -6,17 +6,17 @@ import "./Home.css";
 function Home()
 {
     const navigate = useNavigate();
-    // const token = localStorage.getItem("token");
-    // console.log(token);
-    // useEffect(()=>{
-    //     if(token){
-    //     axios.get("http://localhost:5001/api/",{headers:{"authorization":`Bearer ${token}`}})
-    //     .then(res=>console.log(res.data))
-    //     }
-    //     else{
-    //         navigate("/login")
-    //     }
-    // },[token,navigate]);
+    const token = localStorage.getItem("token");
+    console.log(token);
+    useEffect(()=>{
+        if(token){
+        axios.get("http://localhost:5001/api/",{headers:{"authorization":`Bearer ${token}`}})
+        .then(res=>console.log(res.data))
+        }
+        else{
+            navigate("/login")
+        }
+    },[token,navigate]);
 
     const handleClick = ()=>{
         localStorage.removeItem("token");
