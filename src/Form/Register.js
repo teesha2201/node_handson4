@@ -29,7 +29,11 @@ function Register()
             setStore(res.data.msg)
             console.log(store);
             localStorage.setItem("token",res.data.token);
-            navigate('/login')
+            if(userInput.name.length>=1 && userInput.email.length>=1 && userInput.password.length>=1 && userInput.phoneNo.length>=1)
+             {
+                navigate('/');
+             }
+            // navigate('/login')
         })
         .catch(err=>console.log(err));
         console.log(userInput);
