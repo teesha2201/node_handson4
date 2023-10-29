@@ -34,8 +34,7 @@ function Register()
                 navigate('/');
              }
             else{
-                alert('please fill all the field properly')
-                navigate('/register');
+                alert('please fill all the field properly');
             // navigate('/login')
         })
         .catch(err=>console.log(err));
