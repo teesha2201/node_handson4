@@ -10,14 +10,14 @@ function Routing()
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/login"  element={<Login/>}/>
+                    <Route path="/home" element={<Home/>}/>
+                    <Route path="/"  element={<Login/>}/>
                     <Route path="/register" element={<Register/>}/>
                 </Routes>
                 <div className="parent">
                     <header className="Navbar">
-                    <NavLink to="/" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Home</NavLink>
-                    <NavLink to="/login" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Login</NavLink>
+                    <NavLink to="/home" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Home</NavLink>
+                    <NavLink to="/" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Login</NavLink>
                     <NavLink to="/register" className={"link"} style={({isActive})=>({color: isActive ? "gray":"black"})}>Register</NavLink>
                     </header>
                 </div>
