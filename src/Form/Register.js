@@ -11,7 +11,7 @@ function Register()
         password:"",
         phoneNo:""
     })
-    const [store,setStore] = useState([]);
+    // const [store,setStore] = useState([]);
     const navigate = useNavigate();
 
    const handleUpdate = (e)=>{
@@ -26,13 +26,16 @@ function Register()
         .then(res=>{
             console.log(res.data);
             alert(`${res.data.msg}`);
-            setStore(res.data.msg)
+            setUserInput(res.data.msg)
             console.log(store);
             localStorage.setItem("token",res.data.token);
-            if(userInput.name.length>=1 && userInput.email.length>=1 && userInput.password.length>=1 && userInput.phoneNo.length>=1)
+            if(userInput.name.length>=1 && userInput.email.length>=1 && userInput.password.length>=1 && userInput.phoneNo.length>=10)
              {
                 navigate('/');
              }
+            else{
+                alert('please fill all the field properly')
+                navigate('/register');
             // navigate('/login')
         })
         .catch(err=>console.log(err));
