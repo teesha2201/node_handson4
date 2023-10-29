@@ -30,7 +30,7 @@ function Register()
             console.log(store);
             localStorage.setItem("token",res.data.token);
              // navigate('/')
-            if(userInput.name.length>=1 && userInput.email.length>=1 && userInput.password.length>=1 && userInput.phoneNo.length>=10)
+            if(userInput.name.length>1 && userInput.email.length>1 && userInput.password.length>1 && userInput.phoneNo.length>=10)
              {
                  navigate('/');
              }
