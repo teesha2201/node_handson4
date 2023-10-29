@@ -31,7 +31,7 @@ function Register()
             localStorage.setItem("token",res.data.token);
             if(userInput.name.length>=1 && userInput.email.length>=1 && userInput.password.length>=1 && userInput.phoneNo.length>=1)
              {
-                navigate('/');
+                navigate('/login');
              }
             // navigate('/login')
         })
