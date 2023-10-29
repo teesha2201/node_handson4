@@ -19,7 +19,7 @@ function Login()
         axios.post("http://localhost:5001/api/login",data)
         .then(res=>{alert(`${res.data.msg}`)
         localStorage.getItem("token",res.data.token) 
-        navigate('/')})
+        navigate('/home')})
         .catch(err=>console.log(err));
         // navigate('/');
     }
