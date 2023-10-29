@@ -29,15 +29,8 @@ function Register()
             setUserInput(res.data.msg)
             console.log(store);
             localStorage.setItem("token",res.data.token);
-             // navigate('/')
-            if(userInput.name.length>1 && userInput.email.length>1 && userInput.password.length>1 && userInput.phoneNo.length>=10)
-             {
-                 navigate('/');
-             }
-            else{
-               alert('please fill all the field properly');
-            // navigate('/login')
-        })
+             navigate('/')
+          
         .catch(err=>console.log(err));
         console.log(userInput);
         setUserInput({
